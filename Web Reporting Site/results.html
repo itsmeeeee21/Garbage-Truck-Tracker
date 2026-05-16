@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Garbage Truck Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Internal styles to ensure professional alignment */
+        .finding-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #2563eb;
+        }
+        .finding-label {
+            font-weight: 700;
+            color: #1e40af;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .metric-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+        }
+        .metric-table th {
+            background-color: #1e40af;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .metric-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Garbage Truck Tracker</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="background.html">Data Gathering</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="results.html" class="active">Results</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-banner" style="background-image: url('https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&w=1200&q=80');">
+        <div class="overlay">
+            <h1>Results</h1>
+            <p>Results, Discussion, and Recommendation</p>
+        </div>
+    </header>
+
+    <main class="content-section">
+        <section class="results-summary">
+            <h2>Summary of Results</h2>
+            <p>The usability testing for the Garbage Truck Tracker prototype utilized the System Usability Scale (SUS) to measure real-time tracking accuracy and user confidence. Overall, the data reveals a robust core architecture with specific friction points during the initial onboarding phase.</p>
+        </section>
+
+        <div class="prototype-container">
+            <div class="card">
+                <img src="photo/Screenshot 2026-05-12 233003.png" alt="Prototype Screenshot" class="proto-img">
+            </div>
+        </div>
+
+        <div class="container">
+            <section class="findings-discussion" style="margin-top: 40px;">
+                <h2>Discussion of Findings</h2>
+                
+                <div class="finding-item">
+                    <span class="finding-label">System Efficiency & Ease (Q3):</span>
+                    <p>A significant majority of participants agreed the system was easy to navigate once active, indicating that the Live Map interface is intuitive and requires minimal instruction for operational use.</p>
+                </div>
+
+                <div class="finding-item">
+                    <span class="finding-label">Onboarding Friction (Q10):</span>
+                    <p>Contradicting the operational ease, many users felt a high learning requirement before "getting going." This suggests that the initial setup or account configuration is the primary source of user anxiety.</p>
+                </div>
+
+                <div class="finding-item">
+                    <span class="finding-label">Technical Dependency (Q4):</span>
+                    <p>The data shows a split in confidence; a notable segment of users still feels they would require technical assistance to operate the tracker, highlighting a need for simplified self-service documentation.</p>
+                </div>
+
+                <table class="metric-table">
+                    <thead>
+                        <tr>
+                            <th>Metric Category</th>
+                            <th>Key Analysis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Integration</strong></td>
+                            <td>Functions were perceived as well-integrated and cohesive (Q5).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Consistency</strong></td>
+                            <td>High marks for consistency; the UI does not behave unexpectedly (Q6).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Learnability</strong></td>
+                            <td>Participants believe new users would learn the map features very quickly (Q7).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="card" style="margin-top: 30px; background: #f8fbff; border: 1px solid #d2e3fc; padding: 30px;">
+                <h3 style="color: #1e40af; margin-top: 0;">Recommendations</h3>
+                <ul style="line-height: 1.8;">
+                    <li><strong>Streamlined Onboarding:</strong> Develop a "Quick Start" overlay to reduce the high perceived learning curve identified in Q10.</li>
+                    <li><strong>Push Notifications:</strong> Implement automated alerts when a truck is nearby to address the "Neutral" stance on frequent manual use (Q1).</li>
+                    <li><strong>Support Accessibility:</strong> Integrate a simple "Help" or "FAQ" tooltip to increase user confidence for those who feel they need technical assistance (Q4).</li>
+                    <li><strong>UI Contrast:</strong> Enhance marker visibility to maintain the high integration and consistency scores found in the survey.</li>
+                </ul>
+            </div>
+
+            <section class="attachments" style="margin-top: 50px; text-align: center; padding: 40px; background: #f4f4f4; border-radius: 12px;">
+                <h3>Heuristic Evaluation Workbook</h3>
+                <p>For a detailed breakdown of our compliance with Jakob Nielsen's 10 Usability Heuristics, please view the full report.</p>
+                <div class="card team-card">
+                    <img src="photo/358192eb-4ddf-4c88-9769-1b68988c5bdb.jpg" alt="Team Member" class="member-photo">
+                    <h3>John Carlo J. Pasa</h3>
+                    <p class="role">Project Leader</p>
+                    <a href="file/[PASA]Heuristic_Evaluation_Workbook.pdf" class="btn" style="display: inline-block; padding: 12px 24px; background: #2563eb; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; margin-top: 15px;" target="_blank">
+                    View Evaluation PDF (Workbook)
+                    </a>
+                </div>
+                <div class="card team-card">
+                    <img src="photo/632c30e7-28ac-44d0-a7f6-dd96b66a86a2.jpg" alt="Team Member" class="member-photo">
+                    <h3>Janine Bobis</h3>
+                    <p class="role">UI/UX Designer</p>
+                    <a href="file/[BOBIS]Heuristic_Evaluation_Workbook.pdf" class="btn" style="display: inline-block; padding: 12px 24px; background: #2563eb; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; margin-top: 15px;" target="_blank">
+                    View Evaluation PDF (Workbook)
+                    </a>
+                </div>
+                    <div class="card team-card">
+                    <img src="photo/3a26bbc3-4d3b-4c54-aa00-199d405bdb59.jpg" alt="Team Member" class="member-photo">
+                    <h3>Christian Cano</h3>
+                    <p class="role">Data Analyst</p>
+                    <a href="file/[CANO]Heuristic_Evaluation_Workbook.pdf" class="btn" style="display: inline-block; padding: 12px 24px; background: #2563eb; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; margin-top: 15px;" target="_blank">
+                    View Evaluation PDF (Workbook)
+                    </a>
+                </div>
+                <div class="card team-card">
+                    <img src="photo/80ce386a-21a4-4a44-8e55-4762049e474b.jpg" alt="Team Member" class="member-photo">
+                    <h3>Leomer Bares</h3>
+                    <p class="role">Researcher</p>
+                    <a href="file/[BARES]Heuristic_Evaluation_Workbook.pdf" class="btn" style="display: inline-block; padding: 12px 24px; background: #2563eb; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; margin-top: 15px;" target="_blank">
+                    View Evaluation PDF (Workbook)
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
